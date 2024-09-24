@@ -7,6 +7,10 @@ html body{
     height: 100%;
     width: 100%;
 }
+.navbar{
+    position: fixed;
+    height: 53px;
+}
 .nav-main{
     width: 100%;
     height: 100vh;
@@ -163,7 +167,7 @@ background-color: rgb(42, 40, 37);
 @media (max-width: 700px) 
 {
     .navbar{
-        width: 29.5%;
+        width: 376px;
     }
    .glo{
         display: none;
