@@ -38,37 +38,40 @@ html body{
 }
 
 .home-div {
-    /* border: 1px solid orangered; */
+    /* border: 1px solid orangered;  */
     padding: 10px 10px;
-    background-color: antiquewhite;
    
 }
 .home-div h2{
     text-align: center;
-    /* border: 1px solid black; */
-    height: 50px;
-    width: 30%;
+     /* border: 1px solid black; */
+    width: 20%;
+    height: 100px;
+    margin-left: 5px;
 }
 .home-div p{
  letter-spacing: 1px;
- /* border: 1px solid black; */
- width: 80%;
+  /* border: 1px solid black;  */
+ width: 100%;
 }
 .home-div a{
-    /* border: 1px solid black; */
+     /* border: 1px solid black;  */
     padding-left: 100px;
     text-decoration: none;
     
 }
-.hill-info{
-    padding-bottom: 10px; 
-}
- 
-.hill-info img {
-    width: 350px;
+.home-div img{
+    width: 500px;
+    margin-right: 950px;
+    border: 1px solid  yellow;
     cursor: pointer;
 }
-.hill-info img:hover{
+.hill-info{
+    width: 300%;
+    height: 300px;
+}
+
+.hill-div img:hover{
     filter: grayscale(1);
     transform: scale(1.03);
 }
@@ -187,9 +190,16 @@ background-color: rgb(42, 40, 37);
         width: 100%;
         text-align: center;
     }
-    .hill-info img:hover{
-        filter: grayscale(1);
-        transform: scale(1.03);
+    .home-div{
+        border: 1px solid black;
+    }
+    .hill-info{
+        width: 100%;
+        height: auto;
+        background-color: transparent;
+    }
+    .home-div img{
+        width: 300px;
     }
     .bestoffer img:hover{
         filter: opacity(0.4);
