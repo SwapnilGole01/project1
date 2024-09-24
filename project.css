@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+header{
+   width: 100%;
+   height: 100vh;
+   background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/premium_photo-1697778136245-d0d67de916ef.avif);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   font-family: sans-serif;
+}
+nav{
+   width: 100%;
+   height: 100px;
+   background-color:rgb(16, 236, 68);
+   display: flex;
+   position: fixed;
+   justify-content: space-evenly;
+   align-items: center;
+   border: 1px solid black;
+}
+.nav-bar a{
+   padding: 10px 10px;
+   text-decoration: none;
+   word-spacing: 5px;
+   letter-spacing: 2px;
+   color: white;
+   font-size: large;
+   position:relative;
+   filter: drop-shadow(0px 0px 6px black);
+   /* border: 1px solid black; */
+
+}
+.toggle-btn{
+   color: #fff;
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+}
+.dropdown-menu{
+   display: none;
+   position: absolute;
+   display: flex;
+   text-align: center;
+   padding: 0.9rem;
+   right: 2rem;
+   top: 60px;
+   height: 0;
+   width: 250px;
+   background: rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(0.5px);
+   overflow: hidden;
+   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open{
+   height: 240px;
+}
+.li{
+ text-decoration: none;
+
+}
+
+ .nav-bar a:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0%;
+height: 100%;
+border-bottom: 2px solid indianred;
+transition: 0.4s linear;
+}
+.nav-bar a:hover:before{
+width: 100%;
+}
+.section{
+   top: 200px;
+   left: 1%;
+   width: 70px;
+   position: fixed;
+   z-index: 2;
+}
+.social{
+   display: flex;
+   flex-direction: column;
+   padding: 13px 16px;
+   position: absolute;
+   border-radius: 5px;
+   background-color:indianred;
+}
+.social i{
+   font-size: 26px;
+   padding: 20% 0;
+   cursor: pointer;
+   color: black;
+}
+.social i:hover{
+   transform: scale(1.3);
+}
+.register a{
+   text-decoration: none;
+   font-size: large;
+   position: relative;
+   padding: 6px 6px;
+   border-radius: 5px;
+   background: rgb(209, 84, 84);
+   color: white;
+   filter: drop-shadow(0px 0px 6px black);
+   transition: 0.4s;
+}
+.register a:hover{
+   background-color: transparent;
+   border: 2px solid indianred;
+}
+.main{ 
+    width: 100%;
+   height: 86%;
+   color: white;
+   font-size: x-large;
+   text-align: center;
+   word-spacing: 5px;
+   padding-top: 20%;
+   letter-spacing: 1px; 
+    border: 1px solid black; 
+ }
+.book{
+   width: 180px;
+   height: 45px;
+   font-size: 20px;
+   word-spacing: 1px;
+   text-decoration: none;
+   border-radius: 30px;
+   background-color: indianred;
+   color: white;
+   transition: 0.4s;
+   cursor: pointer;
+    border: 1px solid rgb(233, 226, 226); 
+}
+.book:hover{
+   background-color: transparent;
+   border: 2px solid indianred;
+}
+ .home-div{
+   height: 100%;
+   width: 100%;
+   padding: 20px;
+   text-align: center;
+   background-color: rgb(255, 248, 239);
+   background-color: rgb(238, 208, 223);
+ }
+ .hill{  
+   width:100%;
+   height: 80vh;
+   display: flex;
+   justify-content: space-evenly;
+   padding: 20px;
+    text-align: center;
+    flex-direction: row;
+    border: 2px solid black;
+} 
+.hill-info{
+   width: 30%;
+   padding: 20px;
+   background-color: white;
+   text-align: left;
+   border: 2px solid black;
+   
+   
+} 
+.hill-info a{
+color: indianred;
+padding: 10px;
+   
+}
+.hill-info a:hover{
+   font-size: large;
+   transition: 0.3s;
+}
+.hill-info p{
+   padding: 10px; 
+}
+.best-offer{
+   height: 100vh;
+   width: 100%;
+   background-color:  rgb(255, 248, 239);
+}
+.bf-div{ 
+    width: 100%;
+   border: 2px solid black;
+}
+.bf-main{
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+
+}
+.bf-box{
+   width: 30%;
+   height: 300px;
+   border: 5px solid indianred;
+}
+.bf-main2{
+   width: 100%;
+   padding: 20px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   
+}
+.bf-box1{
+   width: 30%;
+   height: 300px;
+   border: 5px solid indianred;
+}
+.footer{
+   width: 100%;
+   height: 60vh;
+   border: 2px solid black;
+}
+.f-d1{ 
+ width: 100%;
+height: 90%;
+background-color: black;
+}
+.f-d2{
+   width: 100%;
+   height: 10%;
+   background-color: rgb(132, 107, 107);
+}  
+@media (max-width: 992px) {
+   .nav-bar a,
+   .register{
+      display: none;
+   }
+     .toggle-btn{
+      display: block;
+   }
+   .dropdown-menu{
+      display: block;
+   }
+}

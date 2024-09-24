@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+.glo{
+    /* border: 1px solid white; */
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.glo a{
+    text-decoration: none;
+    color: white;
+}
+.contact {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.footer{
+    width: 100%;
+    height: auto; 
+}   
+    .f-1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+    background-color: black;
+    }
+    .f-1-div{
+    height: auto;
+    width: auto;
+    padding: 10px;
+    color: #fff;
+    
+    }
+    .f-1-div a{
+        text-decoration: none;
+    
+    }
+    .f-1-link{
+     padding: 10px;
+     color: #fff;
+     text-align: center;
+    }
+    .f2{
+    height: 5%;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(42, 40, 37);
+    }
+@media (max-width: 700px) {
+
+    .glo{
+        display: none;
+    }
+    .f-1{
+        display: flex;
+        flex-direction: column; 
+    }
+    .footer{
+        padding-top: 0;
+        
+    }
+    
+}
