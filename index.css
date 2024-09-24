@@ -162,7 +162,9 @@ background-color: rgb(42, 40, 37);
 }
 @media (max-width: 700px) 
 {
-    nav
+    .navbar{
+        width: 29.5%;
+    }
    .glo{
         display: none;
     }
